@@ -2,7 +2,10 @@
 
 In order to run this project, run npm install, and fill .env file with your credentials ;)
 
-Since there's no Docker (yet), I've used Node v13.2.0
-In order to post new movie in the database you have to send POST with Title in body.
-To get movies from database just run GET for the url of movies.
-In order to create comment run POST and fill body with following properties (those aren't necessary as for now): Title, Content, Name. To get all the comments, just run GET with url of comments ;)
+App is visible under following URL: https://moviesapitarantulah.herokuapp.com
+
+You can POST/GET movies, and comments. In order to create new entity in database, simply send POST request under /movies endpoint and fill body with "Title":"Name of the Movie", to get movies just hit GET request under /movies endpoint ;) 
+
+For the comments proceed as above, but fill body with "TitleOfTheMovie", "Content", and "Name" ;)
+
+App has been dockerized, just run docker-compose up and everyting will be good to go ;) 
